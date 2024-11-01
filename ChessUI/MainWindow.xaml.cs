@@ -1,14 +1,17 @@
-﻿using System.Text;
+using System.Net.Sockets;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ChessLogic;
+using static Clock;
 
 namespace ChessUI
 {
@@ -22,16 +25,68 @@ namespace ChessUI
         private readonly Dictionary<Position, Move> moveCache = new Dictionary<Position, Move>();
 
         private GameState gameState;
+        private Clock clock;
         private Position selectedPos = null;
 
+        // Add selectedMode variable to hold the selected time mode
+        private TimeMode selectedMode;
+
+        // Add the isGameInProgress variable to manage game state
+        private bool isGameInProgress = false;
+
         public MainWindow()
-        {
-            InitializeComponent();
-            InitializeBoard();
+        {            
+            InitializeComponent();           
+            InitializeBoard();          
 
             gameState = new GameState(Player.White, Board.Initial());
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
+
+            ShowTimeControlMenu();
+
+            clock = new Clock(selectedMode);
+
+            clock.OnPlayer1TimeOut += (sender, e) =>
+            {
+                Dispatcher.Invoke(() => gameState.HandleTimeOut(Player.White));
+            };
+
+            clock.OnPlayer2TimeOut += (sender, e) =>
+            {
+                Dispatcher.Invoke(() => gameState.HandleTimeOut(Player.Black));
+            };
+
+        }
+
+        private void ShowTimeControlMenu()
+        {
+            TimeControlMenu timeControlMenu = new TimeControlMenu();
+            MenuContainer.Content = timeControlMenu;
+
+            timeControlMenu.TimeModeSelected += mode =>
+            {
+                selectedMode = mode;
+                clock = new Clock(selectedMode);
+
+                // Subscribe to clock events for time updates
+                clock.OnPlayer1TimeUpdate += Clock_OnPlayer1TimeUpdate;
+                clock.OnPlayer2TimeUpdate += Clock_OnPlayer2TimeUpdate;
+
+                // Start the clock after setting the mode
+                clock.StartClock();
+                MenuContainer.Content = null;
+                isGameInProgress = true;
+            };
+        }
+        private void Clock_OnPlayer1TimeUpdate(object sender, PlayerTimeEventArgs e)
+        {
+            Dispatcher.Invoke(() => Player1TimeLabel.Content = $"White: {e.Time.ToString("mm\\:ss")}");
+        }
+
+        private void Clock_OnPlayer2TimeUpdate(object sender, PlayerTimeEventArgs e)
+        {
+            Dispatcher.Invoke(() => Player2TimeLabel.Content = $"Black: {e.Time.ToString("mm\\:ss")}");
         }
 
         private void InitializeBoard()
@@ -53,7 +108,7 @@ namespace ChessUI
 
         private void DrawBoard(Board board)
         {
-            for (int r = 0; r < 8; r++) 
+            for (int r = 0; r < 8; r++)
             {
                 for (int c = 0; c < 8; c++)
                 {
@@ -110,7 +165,7 @@ namespace ChessUI
 
             if (moveCache.TryGetValue(pos, out Move move))
             {
-                if(move.Type == MoveType.PawnPromotion)
+                if (move.Type == MoveType.PawnPromotion)
                 {
                     HandlePromotion(move.FromPos, move.ToPos);
                 }
@@ -139,9 +194,11 @@ namespace ChessUI
 
         private void HandleMove(Move move)
         {
-            gameState.MakeMove(move);
+            gameState.MakeMove(move, clock, gameState.CurrentPlayer); // Pass 'clock' and 'currentPlayer'
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
+
+            clock.SwitchTurn();
 
             if (gameState.IsGameOver())
             {
@@ -153,7 +210,7 @@ namespace ChessUI
         {
             moveCache.Clear();
 
-            foreach (Move move in moves) 
+            foreach (Move move in moves)
             {
                 moveCache[move.ToPos] = move;
             }
@@ -245,6 +302,23 @@ namespace ChessUI
                     RestartGame();
                 }
             };
+        }
+
+        public void SetTimeMode(TimeMode selectedMode)
+        {
+            if (clock == null)  // Ensures clock is initialized
+            {
+                clock = new Clock(selectedMode);
+            }
+            clock.StartClock();
+            EnablePieceMovement();
+        }
+
+        // Đảm bảo logic này cho phép di chuyển quân cờ
+        private void EnablePieceMovement()
+        {
+            isGameInProgress = true; // Kích hoạt trạng thái cho phép chơi
+            gameState.Board.EnableInteraction(); 
         }
     }
 }
