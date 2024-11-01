@@ -79,6 +79,7 @@ namespace ChessUI
                 isGameInProgress = true;
             };
         }
+        
         private void Clock_OnPlayer1TimeUpdate(object sender, PlayerTimeEventArgs e)
         {
             Dispatcher.Invoke(() => Player1TimeLabel.Content = $"White: {e.Time.ToString("mm\\:ss")}");
