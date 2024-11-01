@@ -1,6 +1,7 @@
-﻿    using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +16,7 @@ namespace ChessLogic
         private int noCaptureOrPawnMoves = 0;
         private string stateString;
 
-        private readonly Dictionary<string, int> stateHistory = new Dictionary<string, int>();  
+        private readonly Dictionary<string, int> stateHistory = new Dictionary<string, int>();
 
         public GameState(Player player, Board board)
         {
@@ -38,12 +39,12 @@ namespace ChessLogic
             return moveCandidates.Where(move => move.IsLegal(Board));
         }
 
-        public void MakeMove(Move move)
+        public void MakeMove(Move move, Clock clock, Player currentPlayer)
         {
             Board.SetPawnSkipPosition(CurrentPlayer, null);
             bool captureOrPawn = move.Execute(Board);
 
-            if(captureOrPawn)
+            if (captureOrPawn)
             {
                 noCaptureOrPawnMoves = 0;
                 stateHistory.Clear();
@@ -52,6 +53,14 @@ namespace ChessLogic
             {
                 noCaptureOrPawnMoves++;
             }
+
+            // Check if the current player is out of time
+            if (clock.IsCurrentPlayerOutOfTime())
+            {
+                Result = Result.Win(CurrentPlayer.Opponent(),
+                    CurrentPlayer == Player.White ? EndReason.TimeoutBlackWins : EndReason.TimeoutWhiteWins);
+            }
+
 
             CurrentPlayer = CurrentPlayer.Opponent();
             UpdateStateString();
@@ -123,7 +132,14 @@ namespace ChessLogic
 
         private bool ThreefoldRepetition()
         {
-            return stateHistory[stateString] == 3;
+            return stateHistory.TryGetValue(stateString, out int count) && count >= 3;
         }
+
+        public void HandleTimeOut(Player player)
+        {
+            Result = Result.Win(player.Opponent(),
+                player == Player.White ? EndReason.TimeoutBlackWins : EndReason.TimeoutWhiteWins);
+        }
+
     }
 }
