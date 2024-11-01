@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="ChessUI.TimeControlMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChessUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Width="275"
+        Height="125"
+        Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.ColumnSpan="3"
+                   Text="SELECT A GAME MODE"
+                   Style="{StaticResource TextStyle}"
+                   FontSize="26"/>
+
+            <Button Grid.Row="2"
+                Content="STANDARD"
+                Style="{StaticResource ButtonStyle}"
+                Width="80"
+                Height="30"
+                Click="Standard_Click"/>
+
+            <Button Grid.Row="2"
+                Grid.Column="1"
+                Content="RAPID"
+                Style="{StaticResource ButtonStyle}"
+                Width="80"
+                Height="30"
+                Click="Rapid_Click"/>
+
+            <Button Grid.Row="2"
+                    Grid.Column="2"
+                    Content="BLITZ"
+                    Style="{StaticResource ButtonStyle}"
+                    Width="80"
+                    Height="30"
+                    Click="Blitz_Click"/>
+        </Grid>
+
+    </Border>
+</UserControl>
