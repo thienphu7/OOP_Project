@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -263,6 +263,23 @@ namespace ChessLogic
             };
 
             return HasPawnInPosition(player, pawnPositions, skipPos);
+        }
+
+        private bool interactionEnabled = true;
+
+        public void EnableInteraction()
+        {
+            interactionEnabled = true;
+        }
+
+        public void DisableInteraction()
+        {
+            interactionEnabled = false;
+        }
+
+        public bool IsInteractionEnabled()
+        {
+            return interactionEnabled;
         }
     } 
 }
