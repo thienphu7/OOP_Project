@@ -1,4 +1,4 @@
-﻿using ChessLogic;
+using ChessLogic;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -49,6 +49,8 @@ namespace ChessUI
                 EndReason.FiftyMoveRule => "FIFTY-MOVE RULE",
                 EndReason.InsuffiicientMaterial => "INSUFFICIENT MATERIAL",
                 EndReason.ThreefoldRepetition => "THREE-FOLD REPETITION",
+                EndReason.TimeoutWhiteWins => "BLACK TIMED OUT",
+                EndReason.TimeoutBlackWins => "WHITE TIMED OUT",
                 _ => ""
             };
         }
