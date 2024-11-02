@@ -65,23 +65,23 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Text="a" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
-                <TextBlock Text="b" Grid.Row="8" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF9D4B1A" FontSize="22"/>
-                <TextBlock Text="c" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
-                <TextBlock Text="d" Grid.Row="8" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF91461B" FontSize="22"/>
-                <TextBlock Text="e" Grid.Row="8" Grid.Column="5" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
-                <TextBlock Text="f" Grid.Row="8" Grid.Column="6" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF91461B" FontSize="22"/>
-                <TextBlock Text="g" Grid.Row="8" Grid.Column="7" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
-                <TextBlock Text="h" Grid.Row="8" Grid.Column="8" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF91461B" FontSize="22"/>
+                <TextBlock Text="a" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
+                <TextBlock Text="b" Grid.Row="8" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
+                <TextBlock Text="c" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
+                <TextBlock Text="d" Grid.Row="8" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
+                <TextBlock Text="e" Grid.Row="8" Grid.Column="5" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
+                <TextBlock Text="f" Grid.Row="8" Grid.Column="6" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
+                <TextBlock Text="g" Grid.Row="8" Grid.Column="7" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
+                <TextBlock Text="h" Grid.Row="8" Grid.Column="8" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
                 
-                <TextBlock Text="8" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF91461B" FontSize="22"/>
-                <TextBlock Text="7" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
-                <TextBlock Text="6" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF91461B" FontSize="22"/>
-                <TextBlock Text="5" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
-                <TextBlock Text="4" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF91461B" FontSize="22"/>
-                <TextBlock Text="3" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
-                <TextBlock Text="2" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF91461B" FontSize="22"/>
-                <TextBlock Text="1" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFE4C8B1" FontSize="22"/>
+                <TextBlock Text="8" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
+                <TextBlock Text="7" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
+                <TextBlock Text="6" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
+                <TextBlock Text="5" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
+                <TextBlock Text="4" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
+                <TextBlock Text="3" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
+                <TextBlock Text="2" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF4B220B" FontSize="22"/>
+                <TextBlock Text="1" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFDCBE" FontSize="22"/>
 
                 <!-- Highlight and Piece Grids overlayed -->
                 <UniformGrid x:Name="HighlightGrid" 
@@ -102,35 +102,34 @@
         </Viewbox>
 
        <!-- Top timer for Black's time -->
-        <StackPanel Grid.Row="0" Grid.Column="1" 
+        <Border Grid.Row="0" Grid.Column="1" 
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Bottom" 
-                    Margin="10">
+                    Margin="10"
+                    Style="{StaticResource BorderStyle}">
             
             <Label x:Name="Player2TimeLabel" 
                    Content="Black: 00:00" 
-                   FontSize="30" 
-                   Foreground="White" 
+                   FontSize="25" 
                    Padding="10,5"
-                   Background="#333333" 
-                   BorderBrush="#555555"
-                   BorderThickness="1"/>
-        </StackPanel>
+                   BorderThickness="1"
+                   Foreground="#ffa274"/>
+        </Border>
 
         <!-- Bottom timer for White's time -->
-        <StackPanel Grid.Row="2" Grid.Column="1" 
+        <Border Grid.Row="2" Grid.Column="1" 
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Top" 
-                    Margin="10">
-     
-            <Label x:Name="Player1TimeLabel" 
+                    Margin="10"
+                    Style="{StaticResource BorderStyle}">
+
+            <Label x:Name="Player1TimeLabel"                   
                    Content="White: 00:00" 
-                   FontSize="30" 
-                   Foreground="White" 
+                   FontSize="25"                   
                    Padding="10,5"
-                   Background="#333333" 
-                   BorderBrush="#555555" 
-                   BorderThickness="1"/>
-        </StackPanel> 
+                   BorderThickness="1" 
+                   Foreground="#ffa274">
+            </Label>
+        </Border> 
     </Grid>
 </Window>
