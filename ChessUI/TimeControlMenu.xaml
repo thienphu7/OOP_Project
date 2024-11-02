@@ -22,7 +22,7 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.ColumnSpan="3"
-                   Text="SELECT A GAME MODE"
+                   Text="SELECT A TIME MODE"
                    Style="{StaticResource TextStyle}"
                    FontSize="26"/>
 
