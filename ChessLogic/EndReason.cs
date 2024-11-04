@@ -8,6 +8,8 @@
         InsuffiicientMaterial,
         ThreefoldRepetition,
         TimeoutBlackWins, // Black wins due to White timeout
-        TimeoutWhiteWins  // White wins due to Black timeout
+        TimeoutWhiteWins,  // White wins due to Black timeout
+        WhiteSurrendered,
+        BlackSurrendered
     }
 }

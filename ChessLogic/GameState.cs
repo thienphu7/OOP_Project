@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -139,6 +139,18 @@ namespace ChessLogic
         {
             Result = Result.Win(player.Opponent(),
                 player == Player.White ? EndReason.TimeoutBlackWins : EndReason.TimeoutWhiteWins);
+        }
+
+        public void HandleSurrender(Player surrenderingPlayer)
+        {
+            if (surrenderingPlayer == Player.White)
+            {
+                Result = Result.Win(Player.Black, EndReason.WhiteSurrendered);
+            }
+            else
+            {
+                Result = Result.Win(Player.White, EndReason.BlackSurrendered);
+            }
         }
 
     }

@@ -74,6 +74,19 @@ public class Clock
         OnPlayer2TimeUpdate?.Invoke(this, new PlayerTimeEventArgs(player2Time));
     }
 
+    public void ResetClock()
+    {
+        // Stop both player timers
+        player1Timer.Stop();
+        player2Timer.Stop();
+
+        // Unsubscribe all event handlers to avoid conflicts
+        OnPlayer1TimeUpdate = null;
+        OnPlayer2TimeUpdate = null;
+        OnPlayer1TimeOut = null;
+        OnPlayer2TimeOut = null;
+    }
+
     private void Player1Timer_Elapsed(object sender, ElapsedEventArgs e)
     {
         player1Time -= TimeSpan.FromSeconds(1);
