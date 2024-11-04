@@ -20,29 +20,37 @@ namespace ChessUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Image and Rectangle arrays to represent chess pieces and highlights on the board
         private readonly Image[,] pieceImages = new Image[8, 8];
         private readonly Rectangle[,] highlights = new Rectangle[8, 8];
+
+        // Dictionary to cache legal moves for a selected position
         private readonly Dictionary<Position, Move> moveCache = new Dictionary<Position, Move>();
 
+        // Current game state and clock objects
         private GameState gameState;
         private Clock clock;
+
+        // Position of the currently selected piece (if any)
         private Position selectedPos = null;
 
-        // Add selectedMode variable to hold the selected time mode
+        // Variable to hold the selected time mode for the game
         private TimeMode selectedMode;
 
-        // Add the isGameInProgress variable to manage game state
+        // Variable to manage game state
         private bool isGameInProgress = false;
 
         public MainWindow()
         {            
             InitializeComponent();           
-            InitializeBoard();          
+            InitializeBoard();
 
+            // Initialize game state with starting position and white player as current
             gameState = new GameState(Player.White, Board.Initial());
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
 
+            // Show the time control menu to select a time mode
             ShowTimeControlMenu();
 
             clock = new Clock(selectedMode);
@@ -61,12 +69,19 @@ namespace ChessUI
 
         private void ShowTimeControlMenu()
         {
+            // Create a time control menu instance
             TimeControlMenu timeControlMenu = new TimeControlMenu();
+
+            // Set the content of the menu container to the time control menu
             MenuContainer.Content = timeControlMenu;
 
+            // Subscribe to the TimeModeSelected event of the menu
             timeControlMenu.TimeModeSelected += mode =>
             {
+                // Update the selected time mode
                 selectedMode = mode;
+
+                // Create a new clock based on the selected mode
                 clock = new Clock(selectedMode);
 
                 // Subscribe to clock events for time updates
@@ -75,33 +90,48 @@ namespace ChessUI
 
                 // Start the clock after setting the mode
                 clock.StartClock();
+
+                // Clear the menu container
                 MenuContainer.Content = null;
+
+                // Set game in progress and reset the game state
                 isGameInProgress = true;
+                gameState = new GameState(Player.White, Board.Initial());
+                DrawBoard(gameState.Board);
+                SetCursor(gameState.CurrentPlayer);
             };
         }
-        
         private void Clock_OnPlayer1TimeUpdate(object sender, PlayerTimeEventArgs e)
         {
+            // Update the time display for Player 1 (White) on the UI thread
             Dispatcher.Invoke(() => Player1TimeLabel.Content = $"White: {e.Time.ToString("mm\\:ss")}");
         }
 
         private void Clock_OnPlayer2TimeUpdate(object sender, PlayerTimeEventArgs e)
         {
+            // Update the time display for Player 2 (Black) on the UI thread
             Dispatcher.Invoke(() => Player2TimeLabel.Content = $"Black: {e.Time.ToString("mm\\:ss")}");
         }
 
         private void InitializeBoard()
         {
+            // Loop through all squares on the board
             for (int r = 0; r < 8; r++)
             {
                 for (int c = 0; c < 8; c++)
                 {
+                    // Create an image element for the chess piece
                     Image image = new Image();
                     pieceImages[r, c] = image;
+
+                    // Add the image to the PieceGrid container
                     PieceGrid.Children.Add(image);
 
+                    // Create a rectangle element for highlighting squares
                     Rectangle highlight = new Rectangle();
                     highlights[r, c] = highlight;
+
+                    // Add the rectangle to the HighlightGrid container
                     HighlightGrid.Children.Add(highlight);
                 }
             }
@@ -273,13 +303,18 @@ namespace ChessUI
 
         private void RestartGame()
         {
+            // Reset selected variables and board highlights
             selectedPos = null;
             HideHighlights();
             moveCache.Clear();
-            gameState = new GameState(Player.White, Board.Initial());
-            DrawBoard(gameState.Board);
-            SetCursor(gameState.CurrentPlayer);
+
+            // Ensure any running clocks are stopped and reset
+            clock.ResetClock();
+
+            // Show the time control menu to select a new time mode
+            ShowTimeControlMenu();
         }
+
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
@@ -315,11 +350,29 @@ namespace ChessUI
             EnablePieceMovement();
         }
 
-        // Đảm bảo logic này cho phép di chuyển quân cờ
+        // Ensure this logic allows piece movement
         private void EnablePieceMovement()
         {
-            isGameInProgress = true; // Kích hoạt trạng thái cho phép chơi
+            isGameInProgress = true; // Activate playable state
             gameState.Board.EnableInteraction(); 
+        }
+
+        private void SurrenderBlack_Click(object sender, MouseButtonEventArgs e)
+        {
+            if (gameState.CurrentPlayer == Player.Black)
+            {
+                gameState.HandleSurrender(Player.Black);
+                ShowGameOver();
+            }
+        }
+
+        private void SurrenderWhite_Click(object sender, MouseButtonEventArgs e)
+        {
+            if (gameState.CurrentPlayer == Player.White)
+            {
+                gameState.HandleSurrender(Player.White);
+                ShowGameOver();
+            }
         }
     }
 }
