@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="ChessUI.HistoryPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="400" Width="200">
+
+    <!-- Main container with a darker background -->
+    <Border Background="#FFEBAE6F" 
+            Padding="1"
+            CornerRadius="15">
+
+        <Border Background="#FFFFF4F0" CornerRadius="15" Margin="10,10,10,10">
+            
+            <StackPanel>
+
+                <!-- Move History title in a styled Border -->
+                <Border HorizontalAlignment="Center" 
+                        Margin="10" 
+                        Style="{StaticResource BorderStyle}">
+                
+                    <TextBlock Text="Move History" 
+                               FontWeight="Bold" 
+                               FontSize="16" 
+                               Padding="10,5" 
+                               HorizontalAlignment="Center"
+                               Style="{StaticResource TextStyle}"/>
+                </Border>
+
+                <!-- ListBox for displaying moves -->
+                <ListBox Name="MoveList" 
+                         HorizontalAlignment="Stretch" 
+                         VerticalAlignment="Stretch" 
+                         Margin="10,0,10,10"
+                         Background="#FF603433" BorderThickness="0">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+
+                                <!-- Define three columns for Move Number, White Move, and Black Move -->
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Move number -->
+                                <TextBlock Text="{Binding MoveNumber}" 
+                                           Grid.Column="0" 
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"/>
+
+                                <!-- White's move -->
+                                <TextBlock Text="{Binding WhiteMove}" 
+                                           Grid.Column="1" 
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"/>
+
+                                <!-- Black's move -->
+                                <TextBlock Text="{Binding BlackMove}" 
+                                           Grid.Column="2" 
+                                           HorizontalAlignment="Center" 
+                                           VerticalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Border>
+    </Border>
+</UserControl>
