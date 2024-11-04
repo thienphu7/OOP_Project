@@ -50,7 +50,8 @@ namespace ChessUI
                 EndReason.InsuffiicientMaterial => "INSUFFICIENT MATERIAL",
                 EndReason.ThreefoldRepetition => "THREE-FOLD REPETITION",
                 EndReason.TimeoutWhiteWins => "BLACK TIMED OUT",
-                EndReason.TimeoutBlackWins => "WHITE TIMED OUT",
+                EndReason.WhiteSurrendered => "WHITE SURRENDERED",
+                EndReason.BlackSurrendered => "BLACK SURRENDERED",
                 _ => ""
             };
         }
