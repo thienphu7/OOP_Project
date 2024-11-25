@@ -3,6 +3,7 @@
     public enum MoveType
     {
         Normal,
+        Capture,
         CastleKS,
         CastleQS,
         DoublePawn,

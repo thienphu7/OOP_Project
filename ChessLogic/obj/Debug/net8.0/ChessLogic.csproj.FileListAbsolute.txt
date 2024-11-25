@@ -1,0 +1,44 @@
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.deps.json
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.dll
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.pdb
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfoInputs.cache
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfo.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.csproj.CoreCompileInputs.cache
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.dll
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\refint\ChessLogic.dll
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.pdb
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ref\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.deps.json
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfoInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfo.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.csproj.CoreCompileInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\refint\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ref\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.deps.json
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\bin\Debug\net8.0\ChessLogic.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfoInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfo.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.csproj.CoreCompileInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\refint\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ChessLogic.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessLogic\obj\Debug\net8.0\ref\ChessLogic.dll
+D:\movehistory\ChessLogic\bin\Debug\net8.0\ChessLogic.deps.json
+D:\movehistory\ChessLogic\bin\Debug\net8.0\ChessLogic.dll
+D:\movehistory\ChessLogic\bin\Debug\net8.0\ChessLogic.pdb
+D:\movehistory\ChessLogic\obj\Debug\net8.0\ChessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\movehistory\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfoInputs.cache
+D:\movehistory\ChessLogic\obj\Debug\net8.0\ChessLogic.AssemblyInfo.cs
+D:\movehistory\ChessLogic\obj\Debug\net8.0\ChessLogic.csproj.CoreCompileInputs.cache
+D:\movehistory\ChessLogic\obj\Debug\net8.0\ChessLogic.dll
+D:\movehistory\ChessLogic\obj\Debug\net8.0\refint\ChessLogic.dll
+D:\movehistory\ChessLogic\obj\Debug\net8.0\ChessLogic.pdb
+D:\movehistory\ChessLogic\obj\Debug\net8.0\ref\ChessLogic.dll

@@ -40,13 +40,21 @@ namespace ChessUI
         // Variable to manage game state
         private bool isGameInProgress = false;
 
+        private HistoryPanel historyPanel;
+
         public MainWindow()
         {            
-            InitializeComponent();           
-            InitializeBoard();
+            InitializeComponent();
 
+            historyPanel = new HistoryPanel();
+            MoveHistoryPanel.Content = historyPanel;
+         
             // Initialize game state with starting position and white player as current
             gameState = new GameState(Player.White, Board.Initial());
+            gameState.MoveCompleted += OnMoveCompleted;
+
+            InitializeBoard();
+
             DrawBoard(gameState.Board);
             SetCursor(gameState.CurrentPlayer);
 
@@ -64,8 +72,24 @@ namespace ChessUI
             {
                 Dispatcher.Invoke(() => gameState.HandleTimeOut(Player.Black));
             };
-
         }
+
+        private void OnMoveCompleted(object sender, Move move)
+        {
+            bool isWhiteTurn = gameState.CurrentPlayer == Player.Black; // White just moved if it's now Black's turn
+            int moveNumber = (gameState.MoveHistory.Count / 2) + 1;
+
+            string moveNotation = move.ToNotation(gameState.Board); // Generate move notation
+
+            historyPanel.AddMove(moveNotation, isWhiteTurn, moveNumber); // Add move to Move History
+        }
+
+
+        private string FormatMove(Move move)
+        {
+            return move.ToNotation(gameState.Board);
+        }
+
 
         private void ShowTimeControlMenu()
         {
@@ -227,14 +251,16 @@ namespace ChessUI
         {
             gameState.MakeMove(move, clock, gameState.CurrentPlayer); // Pass 'clock' and 'currentPlayer'
             DrawBoard(gameState.Board);
-            SetCursor(gameState.CurrentPlayer);
-
+               
             clock.SwitchTurn();
 
             if (gameState.IsGameOver())
             {
                 ShowGameOver();
             }
+
+            OnMoveCompleted(this, move);
+            SetCursor(gameState.CurrentPlayer);
         }
 
         private void CacheMoves(IEnumerable<Move> moves)
@@ -303,6 +329,9 @@ namespace ChessUI
 
         private void RestartGame()
         {
+            // Reset the move history
+            historyPanel.ResetMoves();
+
             // Reset selected variables and board highlights
             selectedPos = null;
             HideHighlights();

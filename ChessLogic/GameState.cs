@@ -18,10 +18,17 @@ namespace ChessLogic
 
         private readonly Dictionary<string, int> stateHistory = new Dictionary<string, int>();
 
+        public List<Move> MoveHistory { get; private set; }
+
+        public int MoveNumber => Board.PiecePositions().Count() / 2 + 1;
+
+        public event EventHandler<Move> MoveCompleted;
+
         public GameState(Player player, Board board)
         {
             CurrentPlayer = player;
             Board = board;
+            MoveHistory = new List<Move>();
 
             stateString = new StateString(CurrentPlayer, board).ToString();
             stateHistory[stateString] = 1;
@@ -41,6 +48,10 @@ namespace ChessLogic
 
         public void MakeMove(Move move, Clock clock, Player currentPlayer)
         {
+            // Add the move to MoveHistory
+            MoveHistory.Add(move);
+
+            // Update board state
             Board.SetPawnSkipPosition(CurrentPlayer, null);
             bool captureOrPawn = move.Execute(Board);
 
@@ -61,10 +72,16 @@ namespace ChessLogic
                     CurrentPlayer == Player.White ? EndReason.TimeoutBlackWins : EndReason.TimeoutWhiteWins);
             }
 
+            // Generate the move notation using ToNotation
+            string moveNotation = move.ToNotation(Board);
 
+            // Switch player
             CurrentPlayer = CurrentPlayer.Opponent();
             UpdateStateString();
             CheckForGameOver();
+
+            // Trigger the MoveCompleted event after the move is executed
+            MoveCompleted?.Invoke(this, move);
         }
 
         public IEnumerable<Move> AllLegalMovesFor(Player player)

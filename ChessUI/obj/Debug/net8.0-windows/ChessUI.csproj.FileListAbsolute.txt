@@ -1,0 +1,144 @@
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.exe
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.deps.json
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.runtimeconfig.json
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.dll
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.pdb
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessLogic.dll
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessLogic.pdb
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.AssemblyReference.cache
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.baml
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PauseMenu.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.cache
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.lref
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\App.baml
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.baml
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PauseMenu.baml
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.baml
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.baml
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.g.resources
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfoInputs.cache
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfo.cs
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CoreCompileInputs.cache
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CopyComplete
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.dll
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\refint\ChessUI.dll
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.pdb
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.genruntimeconfig.cache
+C:\Users\lehoa\Downloads\UIT_MSIS2433_Final_Project-main (1)\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ref\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.exe
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.deps.json
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.runtimeconfig.json
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessLogic.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.AssemblyReference.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PauseMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\App.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.lref
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\App.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\MainWindow.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PauseMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.g.resources
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfoInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfo.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CoreCompileInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CopyComplete
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\refint\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.genruntimeconfig.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ref\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.exe
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.deps.json
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.runtimeconfig.json
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessUI.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessLogic.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\bin\Debug\net8.0-windows\ChessLogic.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.AssemblyReference.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PauseMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\App.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.lref
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\App.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\MainWindow.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PauseMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.baml
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.g.resources
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfoInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfo.cs
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CoreCompileInputs.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CopyComplete
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\refint\ChessUI.dll
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.pdb
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ChessUI.genruntimeconfig.cache
+D:\[Version3]UIT_MSIS2433_Final_Project-main\[Version3]UIT_MSIS2433_Final_Project-main\UIT_MSIS2433_Final_Project-main\ChessUI\obj\Debug\net8.0-windows\ref\ChessUI.dll
+D:\movehistory\ChessUI\bin\Debug\net8.0-windows\ChessUI.exe
+D:\movehistory\ChessUI\bin\Debug\net8.0-windows\ChessUI.deps.json
+D:\movehistory\ChessUI\bin\Debug\net8.0-windows\ChessUI.runtimeconfig.json
+D:\movehistory\ChessUI\bin\Debug\net8.0-windows\ChessUI.dll
+D:\movehistory\ChessUI\bin\Debug\net8.0-windows\ChessUI.pdb
+D:\movehistory\ChessUI\bin\Debug\net8.0-windows\ChessLogic.dll
+D:\movehistory\ChessUI\bin\Debug\net8.0-windows\ChessLogic.pdb
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.AssemblyReference.cache
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.baml
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\HistoryPanel.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\PauseMenu.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\App.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.cache
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI_MarkupCompile.lref
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\App.baml
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\GameOverMenu.baml
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\MainWindow.baml
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\PauseMenu.baml
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\PromotionMenu.baml
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\TimeControlMenu.baml
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.g.resources
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfoInputs.cache
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.AssemblyInfo.cs
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CoreCompileInputs.cache
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.csproj.CopyComplete
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.dll
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\refint\ChessUI.dll
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.pdb
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ChessUI.genruntimeconfig.cache
+D:\movehistory\ChessUI\obj\Debug\net8.0-windows\ref\ChessUI.dll

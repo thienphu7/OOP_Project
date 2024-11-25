@@ -2,12 +2,11 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:ChessUI"
-        Title="Chess" Width="800" SizeToContent="Height"
+        Title="Chess" Width="1000" SizeToContent="Height"
         Icon="Assets/icon2.ico"
         WindowStartupLocation="CenterScreen"
         Background="#101010"
-        KeyDown="Window_KeyDown">
-
+        KeyDown="Window_KeyDown" ResizeMode="CanMinimize">
     <Grid>
         <!-- Define rows and columns for the board, labels, and timer display -->
         <Grid.RowDefinitions>
@@ -129,10 +128,10 @@
                    FontSize="25"                   
                    Padding="10,5"
                    BorderThickness="1" 
-                   Foreground="#ffa274">
+                   Foreground="#ffa274"
+                  >
             </Label>
         </Border>
-
 
         <!-- History Panel on the right side, displaying move history -->
         <local:HistoryPanel x:Name="MoveHistoryPanel"
@@ -149,7 +148,8 @@
                        VerticalAlignment="Top"
                        Cursor="Hand" 
                        MouseLeftButtonDown="SurrenderBlack_Click"  
-                       Grid.Row="1" Grid.Column="1">
+                       Grid.Row="1" Grid.Column="1"
+                       Margin="10,0,0,0">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -167,7 +167,7 @@
                VerticalAlignment="Bottom" 
                Cursor="Hand" 
                MouseLeftButtonDown="SurrenderWhite_Click" 
-               Grid.Row="1" Grid.Column="1" >
+               Grid.Row="1" Grid.Column="1">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -177,6 +177,5 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-
     </Grid>
 </Window>

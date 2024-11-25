@@ -6,6 +6,7 @@
         public override Position FromPos { get; }
         public override Position ToPos {  get; }
 
+
         private readonly PieceType newType;
 
         public PawnPromotion(Position fromPos, Position toPos, PieceType newType)
@@ -36,6 +37,11 @@
             board[ToPos] = promotionPiece;
 
             return true;
+        }
+
+        public override string ToNotation(Board board)
+        {
+            return base.ToNotation(board); // Calls the ToNotation logic in Move
         }
     }
 }

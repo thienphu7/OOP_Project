@@ -57,5 +57,12 @@ Ensure that both row and column are selected, then check 'Generate operators'.
         {
             return new Position(pos.Row + dir.RowDelta, pos.Column + dir.ColumnDelta);  
         }
+
+        public override string ToString()
+        {
+            char file = (char)('a' + Column); // Convert column index to file (a-h)
+            int rank = 8 - Row;               // Convert row index to rank (1-8)
+            return $"{file}{rank}";
+        }
     }
 }
