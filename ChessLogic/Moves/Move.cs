@@ -10,10 +10,19 @@ namespace ChessLogic
         public abstract Position ToPos { get; }
 
         // Property to track the promoted piece (for pawn promotion)
+        public Piece MovingPiece { get; private set; }
+        public Piece TargetPiece { get; private set; } // Captures the piece at ToPos before the move
         public Piece PromotedPiece { get; protected set; }
 
         // Abstract method to execute a move
         public abstract bool Execute(Board board);
+
+        // Set the MovingPiece before executing the move
+        public void PrepareMove(Board board)
+        {
+            MovingPiece = board[FromPos]; // Piece to be moved
+            TargetPiece = board[ToPos];   // Piece (if any) at the target position
+        }
 
         // Check if the move is legal
         public virtual bool IsLegal(Board board)
@@ -32,8 +41,6 @@ namespace ChessLogic
         // Generate the move notation (e.g., "e4", "Nxf3", "O-O-O", "xh8=Q")
         public virtual string ToNotation(Board board)
         {
-            // Retrieve the piece at the starting position
-            Piece piece = board[ToPos];
 
             // Handle castling
             if (Type == MoveType.CastleKS) return "0-0";
@@ -42,7 +49,7 @@ namespace ChessLogic
             // Determine piece abbreviation (no abbreviation for pawns)
             string pieceNotation = "";
 
-            pieceNotation = piece.Type switch
+            pieceNotation = MovingPiece.Type switch
             {
                 PieceType.King => "K",
                 PieceType.Queen => "Q",
@@ -54,16 +61,39 @@ namespace ChessLogic
 
             // Add "x" for captures
             string captureNotation = "";
-
-            if (FromPos != null && board[FromPos] != null && board[ToPos] != null)
+            if (TargetPiece != null && TargetPiece.Color != MovingPiece.Color)
             {
-                Piece fromPiece = board[FromPos];
-                Piece toPiece = board[ToPos];
+                captureNotation = "x"; // Valid capture
+            }
 
-                // Check if the piece at ToPos belongs to the opponent
-                if (fromPiece != null && toPiece.Color != fromPiece.Color)
+            // Handle disambiguation
+            string disambiguation = "";
+
+            if (MovingPiece.Type == PieceType.Pawn && TargetPiece != null)
+            {
+                // For pawns, always include the starting file when capturing
+                disambiguation = $"{(char)('a' + FromPos.Column)}";
+            }
+            else if (board.IsAmbiguousMove(MovingPiece, FromPos, ToPos))
+            {
+                // Get all ambiguous positions
+                var ambiguousPositions = board.GetAmbiguousPositions(MovingPiece, FromPos, ToPos);
+
+                // Check if ambiguity is on the same file or rank
+                bool sameFile = ambiguousPositions.Any(pos => pos.Column == FromPos.Column);
+                bool sameRank = ambiguousPositions.Any(pos => pos.Row == FromPos.Row);
+
+                if (sameFile && !sameRank)
                 {
-                    captureNotation = "x"; // Add "x" to indicate capture
+                    disambiguation = $"{(char)('a' + FromPos.Column)}"; // Include file only
+                }
+                else if (!sameFile && sameRank)
+                {
+                    disambiguation = $"{8 - FromPos.Row}"; // Include rank only
+                }
+                else
+                {
+                    disambiguation = $"{(char)('a' + FromPos.Column)}{8 - FromPos.Row}"; // Include both file and rank
                 }
             }
 
@@ -71,12 +101,17 @@ namespace ChessLogic
             string destination = ToPos.ToString();
 
             // Handle pawn promotion
-            string promotionNotation = (Type == MoveType.PawnPromotion && PromotedPiece != null)
-                ? $"={PromotedPiece.Type.ToString()[0].ToString().ToUpper()}"
-                : "";
+            string promotionNotation = "";
+            if (MovingPiece.Type == PieceType.Pawn && (ToPos.Row == 0 || ToPos.Row == 7))
+            {
+                if (PromotedPiece != null)
+                {
+                    promotionNotation = $"={PromotedPiece.Type.ToString()[0].ToString().ToUpper()}";
+                }
+            }
 
             // Combine all components
-            return pieceNotation + captureNotation + destination + promotionNotation;
+            return pieceNotation + disambiguation + captureNotation + destination + promotionNotation;
         }
     }
 }

@@ -257,8 +257,8 @@ namespace ChessLogic
 
             Position[] pawnPositions = player switch
             {
-                Player.White => new Position[] {skipPos + Direction.SouthWest, skipPos + Direction.SouthEast},
-                Player.Black => new Position[] {skipPos + Direction.NorthWest, skipPos + Direction.NorthEast},
+                Player.White => new Position[] { skipPos + Direction.SouthWest, skipPos + Direction.SouthEast },
+                Player.Black => new Position[] { skipPos + Direction.NorthWest, skipPos + Direction.NorthEast },
                 _ => Array.Empty<Position>()
             };
 
@@ -281,5 +281,69 @@ namespace ChessLogic
         {
             return interactionEnabled;
         }
-    } 
+
+        // Check if multiple pieces of the same type can move to the same destination
+        public bool IsAmbiguousMove(Piece movingPiece, Position from, Position to)
+        {
+            foreach (var pos in PiecePositionsFor(movingPiece.Color))
+            {
+                Piece piece = this[pos];
+                if (piece.Type == movingPiece.Type && pos != from)
+                {
+                    foreach (var move in piece.GetMoves(pos, this))
+                    {
+                        if (move.ToPos == to)
+                        {
+                            return true; // Another piece of the same type can move to the same destination
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        public IEnumerable<Position> GetAmbiguousPositions(Piece movingPiece, Position from, Position to)
+        {
+            List<Position> ambiguousPositions = new List<Position>();
+
+            foreach (var pos in PiecePositionsFor(movingPiece.Color))
+            {
+                Piece piece = this[pos];
+                if (piece.Type == movingPiece.Type && pos != from)
+                {
+                    foreach (var move in piece.GetMoves(pos, this))
+                    {
+                        if (move.ToPos == to)
+                        {
+                            ambiguousPositions.Add(pos);
+                            break; // Avoid duplicate checks for the same position
+                        }
+                    }
+                }
+            }
+
+            return ambiguousPositions;
+        }
+
+        // Check if two pieces of the same type are in the same file
+        public bool IsSameFile(Piece movingPiece, Position from, Position to)
+        {
+            foreach (var pos in PiecePositionsFor(movingPiece.Color))
+            {
+                Piece piece = this[pos];
+
+                if (piece.Type == movingPiece.Type && pos != from)
+                {
+                    foreach (var move in piece.GetMoves(pos, this))
+                    {
+                        if (move.ToPos == to && pos.Column == from.Column)
+                        {
+                            return true; // Two pieces of the same type are in the same file
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+    }
 }

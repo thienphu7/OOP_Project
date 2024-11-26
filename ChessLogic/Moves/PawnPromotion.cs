@@ -36,12 +36,23 @@
             promotionPiece.HasMoved = true;
             board[ToPos] = promotionPiece;
 
+            PromotedPiece = promotionPiece;
             return true;
         }
 
         public override string ToNotation(Board board)
         {
-            return base.ToNotation(board); // Calls the ToNotation logic in Move
+            // Determine if the move is a capture
+            string captureNotation = board[ToPos] != null ? "x" : "";
+
+            // Get the destination square
+            string destination = ToPos.ToString();
+
+            // Add promotion notation (e.g., =Q, =R, etc.)
+            string promotionNotation = $"={newType.ToString()[0].ToString().ToUpper()}";
+
+            // Combine the move components
+            return captureNotation + destination + promotionNotation;
         }
     }
 }
