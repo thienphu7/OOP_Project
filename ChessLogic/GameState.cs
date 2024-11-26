@@ -48,6 +48,9 @@ namespace ChessLogic
 
         public void MakeMove(Move move, Clock clock, Player currentPlayer)
         {
+            // Store the moving piece
+            move.PrepareMove(Board); 
+
             // Add the move to MoveHistory
             MoveHistory.Add(move);
 
@@ -169,6 +172,5 @@ namespace ChessLogic
                 Result = Result.Win(Player.White, EndReason.BlackSurrendered);
             }
         }
-
     }
 }
